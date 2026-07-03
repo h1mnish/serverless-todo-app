@@ -20,46 +20,54 @@ export const handler = async (event) => {
 
     try {
 
-   // switch
+        const httpMethod =
+            event.requestContext?.http?.method ||
+            event.httpMethod;
 
-}
-catch(error){
+        switch (httpMethod) {
 
-    return{
-        statusCode:500,
-        body:JSON.stringify({
-            message:"Internal Server Error",
-            error:error.message
-        })
-    }
+            case "OPTIONS":
+    return {
+        statusCode: 200,
+        headers: {
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Headers": "*",
+            "Access-Control-Allow-Methods": "GET,POST,PUT,DELETE,OPTIONS"
+        },
+        body: ""
+    };
 
-}
+            case "POST":
+                return await createTask(event);
 
-    const httpMethod =
-    event.requestContext?.http?.method ||
-    event.httpMethod;
+            case "GET":
+                return await getTasks();
 
-    switch (httpMethod) {
+            case "PUT":
+                return await updateTask(event);
 
-        case "POST":
-            return await createTask(event);
+            case "DELETE":
+                return await deleteTask(event);
 
-        case "GET":
-            return await getTasks();
+            default:
+                return {
+                    statusCode: 400,
+                    body: JSON.stringify({
+                        message: "Invalid Request"
+                    })
+                };
+        }
 
-        case "PUT":
-            return await updateTask(event);
+    } catch (error) {
 
-        case "DELETE":
-            return await deleteTask(event);
+        return {
+            statusCode: 500,
+            body: JSON.stringify({
+                message: "Internal Server Error",
+                error: error.message
+            })
+        };
 
-        default:
-            return {
-                statusCode: 400,
-                body: JSON.stringify({
-                    message: "Invalid Request"
-                })
-            };
     }
 
 };

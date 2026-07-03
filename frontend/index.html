@@ -1,37 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Serverless Todo App</title>
 
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
     <div class="container">
 
-        <h1>Serverless Todo App</h1>
+        <div class="header">
+
+            <h1>
+
+                <i class="fa-solid fa-list-check"></i>
+
+                Serverless Todo
+
+            </h1>
+
+            <p>
+
+                AWS Lambda • API Gateway • DynamoDB • S3
+
+            </p>
+
+        </div>
+
 
         <div class="input-section">
 
             <input
-                type="text"
                 id="taskInput"
-                placeholder="Enter a task..."
-            >
+                type="text"
+                placeholder="What needs to be done today?">
 
             <button id="addTaskBtn">
+
+                <i class="fa-solid fa-plus"></i>
+
                 Add Task
+
             </button>
 
         </div>
+
+
+        <div id="emptyState">
+
+            <i class="fa-regular fa-note-sticky"></i>
+
+            <h2>Your Task List :</h2>
+
+            <p>
+
+                Previously added tasks will appear here. Add a task to get started!
+
+            </p>
+
+        </div>
+
 
         <div id="taskList"></div>
 
     </div>
 
+
+    <!-- Toast -->
+
+    <div id="toast"></div>
+
+
     <script src="script.js"></script>
 
 </body>
+
 </html>
