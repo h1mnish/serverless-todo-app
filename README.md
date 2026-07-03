@@ -70,31 +70,9 @@ The frontend is hosted on Amazon S3 as a static website, while backend APIs are 
 
 # 🏗 Architecture
 
-> Add your architecture diagram here.
+<img width="1536" height="1024" alt="architecture" src="https://github.com/user-attachments/assets/0c6f4f4f-eec9-48d2-9492-562bfb827ae3" />
 
-Example:
 
-```
-User
-   │
-   ▼
-Amazon S3 (Frontend)
-   │
-   ▼
-API Gateway
-   │
-   ▼
-AWS Lambda
-   │
-   ▼
-Amazon DynamoDB
-
-          │
-          ▼
- Amazon CloudWatch
-```
-
----
 
 # 📂 Project Structure
 
