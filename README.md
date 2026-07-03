@@ -100,7 +100,7 @@ Serverless-Todo-App/
 ## Clone Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/serverless-todo-app.git
+git clone https://github.com/h1mnish/serverless-todo-app.git
 ```
 
 ---
