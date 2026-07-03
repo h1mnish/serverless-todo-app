@@ -12,6 +12,39 @@ The frontend is hosted on Amazon S3 as a static website, while backend APIs are 
 
 ---
 
+# 🚀 Serverless Todo App
+
+(Project description)
+
+---
+
+## 📌 Project Overview
+
+(Project overview)
+
+---
+
+## 🚀 Live Demo
+
+🌐 **Live Website:**
+
+http://serverless-todo-app-h1mnish.s3-website.ap-south-1.amazonaws.com
+
+---
+
+## ✨ Features
+
+- ✅ Create Tasks
+
+- ✅ View Tasks
+
+- ✅ Update Tasks
+
+- ✅ Delete Tasks
+
+---
+
+
 ## ✨ Features
 
 - ✅ Create Tasks
