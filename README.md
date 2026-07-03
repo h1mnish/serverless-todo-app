@@ -210,25 +210,29 @@ Enable Static Website Hosting.
 
 ### Home Page
 
-(Add Screenshot)
+<img width="1916" height="988" alt="homepage" src="https://github.com/user-attachments/assets/cf640f30-b7f3-4620-85a3-7bfb910e6bdb" />
+
 
 ---
 
 ### CloudWatch Logs
 
-(Add Screenshot)
+<img width="1900" height="831" alt="cloudwatchlogs" src="https://github.com/user-attachments/assets/35de5d3b-6ffe-4a9c-b171-685c8b354e34" />
+
 
 ---
 
 ### DynamoDB Table
 
-(Add Screenshot)
+<img width="1892" height="840" alt="dynamodb" src="https://github.com/user-attachments/assets/821caf08-ecea-4368-a3cc-ec1445a3b8f1" />
+
 
 ---
 
 ### API Gateway
 
-(Add Screenshot)
+<img width="1880" height="532" alt="apigateway" src="https://github.com/user-attachments/assets/6eb7c810-51cf-410c-bc90-152660b81c3c" />
+
 
 ---
 
